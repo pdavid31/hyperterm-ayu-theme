@@ -1,14 +1,14 @@
 // import ayu colors
-const { mirage } = require('ayu');
+const {mirage} = require('ayu');
 
 // standard ANSI Colours
 const black = '#000000';
-const red = '#ff2600';
-const green = '#3AD900';
-const yellow = '#ffc600';
-const blue = '#1478DB';
-const magenta = '#ff2c70';
-const cyan = '#00c5c7';
+const red = mirage.vcs.removed.hex();
+const green = mirage.vcs.added.hex();
+const yellow = mirage.common.accent.hex();
+const blue = mirage.vcs.modified.hex();
+const magenta = mirage.syntax.constant.hex();
+const cyan = mirage.syntax.regexp.hex();
 const white = mirage.syntax.func.hex();
 const lightBlack = '#808080';
 const lightRed = '#ff0000';
@@ -38,8 +38,7 @@ exports.decorateConfig = config =>
     }
     .hyper_main {
       ${(config.wickedBorder || config.wickedBorder === undefined) &&
-          `border: 2px solid ${config.wickedBorderColor ||
-              mirage.common.accent.hex()} !important;`}
+          `border: 2px solid ${config.wickedBorderColor || mirage.common.accent.hex()} !important;`}
     }
 
     .tabs_nav {
