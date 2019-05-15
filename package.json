@@ -1,6 +1,6 @@
 {
     "name": "hyperterm-theme-ayu-mirage",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "A Ayu Mirage Theme for Hyper",
     "main": "index.js",
     "scripts": {
