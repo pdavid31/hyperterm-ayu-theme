@@ -1,16 +1,12 @@
 {
     "name": "hyperterm-ayu-mirage-theme",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "A Ayu Mirage Theme for Hyper",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [
-        "hyper",
-        "theme",
-        "color scheme"
-    ],
+    "keywords": ["hyper", "theme", "color scheme"],
     "author": "Paul David",
     "repository": {
         "type": "git",
